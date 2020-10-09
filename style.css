@@ -167,7 +167,7 @@ li {
   width: 50%;
 }
 
-.skill-list-one, .skill-list-two, .skill-list-three {
+.skill-list {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -195,30 +195,27 @@ li {
   color: white;
 }
 
-.project-heading {
-  padding: 0px 60px;
-  color: black;
-  margin: 0px;
-}
-
 .first-project-container, .second-project-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.projects-section-two {
-  padding-bottom: 60px;
-}
-
-.project-one, .project-two, .project-three, .project-four {
-  width: 40%;
-  margin: 40px;
+.project {
+  width: 45%;
+  margin: 20px;
   background: white;
 }
 
 .project-screenshot {
   width: 100%;
   padding: 20px 60px;
+}
+
+.project-heading {
+  padding: 0px 60px;
+  color: black;
+  margin: 0px;
 }
 
 .project-text {
@@ -245,13 +242,14 @@ li {
 .third-project-container {
   display: flex;
   flex-wrap: wrap; 
-  justify-content: space-between;
   align-items: flex-start;
-  padding: 60px;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 
 .thumbnail-image {
   width: 20%;
+  align-items: flex-start;
 }
 
 .white-button {
@@ -306,18 +304,18 @@ li {
   padding: 60px;
 }
 
-.client-type {
+.clients-small-heading {
   margin-bottom: 15px;
   padding-top: 10px;
 }
 
-.client-names {
+.clients-text {
   color: #ff4942;
   padding: 0px;
 }
 
 .lecturing {
-  padding: 40px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
   margin-bottom: 15px;
 }
 
@@ -424,7 +422,7 @@ footer {
     font-size: 28px;
     padding: 0px 40px;
   }
-  .project-one, .project-two, .project-three, .project-four {
+  .project {
     width: 100%;
     margin: 20px;
   } 
@@ -484,7 +482,7 @@ footer {
     padding: 40px;
   }
 
-  .client-names {
+  .clients-text {
     margin: 0px;
     width: 100%;
   }
@@ -550,7 +548,7 @@ footer {
       padding-bottom: 15px;
     }
   
-    .skill-list-one, .skill-list-two, .skill-list-three {
+    .skill-list {
       padding: 20px 40px;
       margin: 0px;
     }
@@ -582,13 +580,14 @@ footer {
       display: none;
     }
   
-    .clients {
-      padding-bottom: 0px;
-    }
-  
-    .client-type {
+    .clients-small-heading {
       margin-top: 15px; 
     }
+
+    .clients-text {
+      padding-bottom: 0px;
+    }
+
   }
 
   
