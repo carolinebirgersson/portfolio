@@ -246,6 +246,7 @@ li {
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between;
+  align-items: flex-start;
   padding: 60px;
 }
 
@@ -254,15 +255,14 @@ li {
 }
 
 .white-button {
+  background: white;
   color: #ff4942;
   margin-top: 40px;
   padding: 20px;
 }
 
 .white-button:hover {
-  color: white;
-  background: #00B295;
-  border: 1px solid white;
+  background:#E3D8CC;
 }
 
 /* Background */
@@ -336,7 +336,7 @@ footer {
   padding-left: 40px;
 }
 
-/* Mobil */
+/* Ipad/Mobil */
 
 @media (max-width: 831px)  {
 
