@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio</title>
+  <title>Caroline Birgersson</title>
   <link rel="stylesheet" href="./style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="./images/beige.jpeg"/>
+  <link rel="icon" type="image/png" href="./images/Caroline_Birgersson_beige.jpg"/>
 </head>
 <body>
-<!-- HEADER           <div class="heading-part-two"></div>   <div class="heading-part-three"></div> -->
+<!-- HEADER -->
   <header>
-      <h3 class="heading-small" tabindex="0">Portfolio</h3>
+      <h1 class="heading-small" tabindex="0">Portfolio</h1>
     <div class="heading-name-container">
-        <h2 class="firstname" tabindex="0">Caroline</h2>
-        <h2 class="lastname" tabindex="0">Birgersson</h2>
+        <h1 class="firstname" tabindex="0">Caroline</h1>
+        <h1 class="lastname" tabindex="0">Birgersson</h1>
     </div>
   </header>
 
 <!-- Intro -->
   <section class="intro">
-    <article class="color">
+    <div class="color-block">
       <img class="image-of-me" src="./images/Caroline_Birgersson_beige.jpg" alt="image of caroline birgersson" tabindex="0">
-    </article>
-    <article class="about-me">
+    </div>
+    <article class="text-block">
       <h1 tabindex="0">Frontend developer in Stockholm</h1>
       <p class="intro-text" tabindex="0">My name is Caroline Birgersson and I'm a frontend developer. 
         I have a background in UX, as a senior UX Writer, but since 2020 my focus has been to deep dive into front end development. 
@@ -35,7 +35,7 @@
         <li>Course Director at Berghs School of Communication</li>
         <li>Founder of Birger&Blom</li>
       </ul>
-      <button class="red-button" href="https://www.linkedin.com/in/caroline-birgersson-b8b6b660/">Visit LinkedIn profile</button>
+      <a class="red-link" href="https://www.linkedin.com/in/caroline-birgersson-b8b6b660/">Visit LinkedIn profile <span>-></span></a>
     </article>
   </section>
 
@@ -79,11 +79,11 @@
 
 <!-- Projects --> 
   <section class="project-section">
-    <h2 class="section-heading" tabindex="0">Featured projects</h2>
+    <h1 class="section-heading" tabindex="0">Featured projects</h1>
 
-    <article class="first-project-container">
+    <article class="project-container">
       <div class="project">
-        <a href="https://swecationmagazine.netlify.app/">
+        <a class="project-link" href="https://swecationmagazine.netlify.app/">
           <img class="project-screenshot" src="./images/swecationmag.png" alt="a screenshot of the project Swecation magazine">
           <h3 class="project-heading">Swecation Magazine</h3>
         </a>
@@ -93,9 +93,8 @@
           <li class="tech">CSS6</li>
         </ul>
       </div>
-
       <div class="project">
-        <a href="https://stockholmsbadhus.netlify.app/">
+        <a class="project-link" href="https://stockholmsbadhus.netlify.app/">
           <img class="project-screenshot" src="./images/Stockholmsbadhus.png" alt="a screenshot of the project Stockholms badhus">
           <h3 class="project-heading">Stockholms badhus</h3>
         </a>
@@ -103,13 +102,13 @@
         <ul class="tech-container" tabindex="0">
           <li class="tech">HTML5</li>
           <li class="tech">CSS6</li>
-        </ol>
+        </ul>
       </div>
     </article>
 
-    <article class="second-project-container">
+    <article class="project-container">
       <div class="project">
-        <a href="https://tellweather.netlify.app/">
+        <a class="project-link" href="https://tellweather.netlify.app/">
           <img class="project-screenshot" src="./images/weatherapp.png" alt="a screenshot of the project weather app">
           <h3 class="project-heading">Weather app</h3>
         </a>
@@ -121,7 +120,7 @@
         </ul>
       </div>
       <div class="project">
-        <a href="https://cluedobycaroline.netlify.app/">
+        <a class="project-link" href="https://cluedobycaroline.netlify.app/">
           <img class="project-screenshot" src="./images/cluedo.png" alt="a screenshot of the project cluedo game ">
           <h3 class="project-heading">Cluedo game</h3>
         </a>
@@ -134,55 +133,40 @@
       </div>
     </article>
 
-    <div class="third-project-container">
+    <div class="mini-project-container">
       <img class="thumbnail-image" src="images/swecation.png" alt="a screenshot of the project">
       <img class="thumbnail-image" src="images/swecation.png" alt="a screenshot of the project">
       <img class="thumbnail-image" src="images/swecation.png" alt="a screenshot of the project">
       <img class="thumbnail-image" src="images/swecation.png" alt="a screenshot of the project">
     </div>
-    <button class="white-button" href="https://github.com/carolinebirgersson">More projects at GitHub</button>
+    
+    <a class="white-link" href="https://github.com/carolinebirgersson">More projects at GitHub <span>-></span></a>
 
   </section>
 
   <!-- Background section -->
-<section class="background-section">
-  <section class="accordion-container">
-    <h3 class="accordion-heading" tabindex="0">My thoughts about working with code</h3>
-    <div class="question" id="question1">
-      <h4 class="accordion-heading" tabindex="0">Why did you start coding?</h4>
-    </div>
-    <div class="answer-container">
-      <p class="answer" tabindex="0">
-        During my work as a senior ux writer I often worked in teams with designers and developers. 
-        My role was to tell the developer how to structure the content on a website. 
-        While doing that over and over again, I started to have a wish of doing it myself, 
-        not always be in the hands of a developer trying to explain how I think. 
-      </p>
-    </div>
+  <section class="background-section">
+    <article class="faq-block">
+      <h3 class="faq-heading" tabindex="0">My thoughts about working with code</h3>
+        <h4 class="faq-heading" tabindex="0">Why did you start coding?</h4>
+        <p class="answer" tabindex="0">
+          During my work as a senior ux writer I often worked in teams with designers and developers. 
+          My role was to tell the developer how to structure the content on a website. 
+          While doing that over and over again, I started to have a wish of doing it myself, 
+          not always be in the hands of a developer trying to explain how I think. 
+        </p>
+        <h4 class="faq-heading" tabindex="0">What is the benefits of your background in UX Writing?</h4>
+        <p class="answer" tabindex="0">The benefit is that "content first" and the user is the core of my work. 
+          As a ux writer you always have the user in mind when you plan the site. 
+          You gather insights from analizing user data and export those insights into actions 
+          that responds to what the user needs. You work with SEO to make sure the user finds 
+          the content. And you write microcopy that is user friendly and navigates the user forward (hopefully towards conversion).
+        </p>
+        <h4 class="faq-heading" tabindex="0">What are you aiming for in every project?</h4>
+        <p class="answer" tabindex="0">To create a website that is user friendly and accessible for everyone.</p>
+      </article>
 
-    <div class="question" id="question2">
-      <h4 class="accordion-heading" tabindex="0">What is the benefits of your background in UX Writing?</h4>
-    </div>
-    <div class="answer-container">
-      <p class="answer" tabindex="0">The benefit is that "content first" is the core of my work. 
-        As a ux writer you always have the user in mind when you plan the site. 
-        You gather insights from analizing user data and export those insights into actions 
-        that responds to what the user needs. You work with SEO to make sure the user finds 
-        the content. And you write microcopy that is user friendly and navigates the user forward (hopefully towards conversion).
-      </p>
-    </div>
-
-    <div class="question" id="question3">
-      <h4 class="accordion-heading" tabindex="0">What are you aiming for in every project?</h4>
-    </div>
-    <div class="answer-container">
-      <p class="answer" tabindex="0">To create a website that is user friendly and accessible for everyone.</p>
-    </div>
-  </section>
-
-  <script src="./script.js"></script>
-
-    <article class="clients-container">
+    <article class="text-block">
       <h3 class="clients-heading" tabindex="0">Some clients I've worked with</h3>
         <h4 class="clients-small-heading" tabindex="0">B2B & B2C</h4>
         <p class="clients-text" tabindex="0">Previa, Froda, ICA, Libero, UKK, Hemfrid, Löfbergs, ICA Banken etc.</p>
@@ -193,13 +177,18 @@
           Good Tech Conference, Gothia Science Park, Story, Marketing Association in Stockholm, Västerås, Uppsala etc.
         </p>
     </article>
+
   </section>
 
 <!-- Footer -->
   <footer>
-    <p class="contact-details" tabindex="0">Caroline Birgersson</p>
-    <p class="contact-details" tabindex="0">076 - 794 25 25</p>
-    <a class="footer-email" href="mailto:caroline@birgerochblom.se">caroline@birgerochblom.se</a>
+    <ul>
+      <li class="contact-details" tabindex="0">Caroline Birgersson</li>
+      <li class="contact-details" tabindex="0">076 - 794 25 25</li>
+      <a href="mailto:caroline@birgerochblom.se">
+      <li class="contact-details" tabindex="0">caroline@birgerochblom.se</li>
+      </a>
+    </ul>
   </footer>
 
 </body>

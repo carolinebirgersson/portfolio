@@ -12,8 +12,11 @@ body {
   margin: 0px;
 }
 
+/* Headings and text */
+
 h1 {
   color: #ff4942;
+  margin: 15px 0px;
   font-size: 42px;
 }
 
@@ -34,31 +37,49 @@ p {
   color: black;
   line-height: 180%;
   font-size: 18px;
-  width: 75%;
+  width: 85%;
   padding: 0px 0px 20px 50px;
   margin: 0px;
 }
 
-button {
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 25px;
-  padding: 15px;
-  font-size: 16px;
+/* Lists */
+
+ul {
+  padding-bottom: 20px;
 }
 
-  a {
-    text-decoration: none;
-  }
+li {
+  list-style-type: circle;
+  color: #ff4942;
+  width: fit-content;
+  margin: 10px;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color:white;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.red-link:hover {
+  background:#E3D8CC;
+  color: #ff4942;
+  text-decoration: underline;
+  padding: 15px 0px;
+  border-radius: 25px;
+}
   
-  a:hover {
-    font-weight: bold;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
+.project-link:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 
 /* Header */
 
@@ -70,6 +91,8 @@ header {
 
 .heading-small {
   padding-left: 50px;
+  font-size: 24px;
+  margin: 0px;
 }
 
 .heading-name-container {
@@ -83,6 +106,7 @@ header {
   font-size: 84px;
   padding-left: 50px;
   width: 50%;
+  margin: 0px;
 }
 
 .lastname {
@@ -92,7 +116,8 @@ header {
   font-size: 84px;
   padding-left: 100px;
   width: 50%;
-  padding-right: 50px; 
+  padding-right: 50px;
+  margin: 0px; 
 }
 
 /* Intro */
@@ -101,7 +126,7 @@ header {
   display: flex;
 }
 
-.color {
+.color-block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,11 +139,12 @@ header {
   border-radius: 50%;
 }
 
-.about-me {
+.text-block {
   background: white;
+  color: #ff4942; 
   width: 50%;
   margin: 0px;
-  padding: 40px 0px 60px 60px;
+  padding: 60px 0px 60px 60px;
 }
 
 .intro-text {
@@ -132,27 +158,19 @@ header {
   margin-top: 60px;
 }
 
-ul {
-  padding-bottom: 20px;
-}
-
-li {
-  list-style-type: circle;
+.red-link {
   color: #ff4942;
-  width: fit-content;
-  margin: 10px;
 }
 
-.red-button {
-  background:#ff4942;
-  color: white;
+.project-link:hover {
+  background: none;
 }
 
-.red-button:hover {
-  background:#E3D8CC;
-  color: #ff4942;
-  border: 1px solid white;
+span {
+  font-weight: bold;
+  font-size: 24px;
 }
+
 /* Skills */
 
 .skill-section {
@@ -181,21 +199,22 @@ li {
 }
 
 /* Projects */
+
 .project-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background:#ff4942;
-  padding-bottom: 60px;
   width: 100%;
+  margin: 0px;
 }
 
 .section-heading {
-  padding: 60px 0px;
   color: white;
+  padding: 40px 0px;
 }
 
-.first-project-container, .second-project-container {
+.project-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -231,20 +250,20 @@ li {
 
 .tech {
   list-style-type: none;
-  background: white;
-  color: #ff4942;;
+  color: white;
+  background: #ff4942;;
   border-radius: 5px;
   font-weight: 900;
   padding: 10px 30px;
   margin: 10px;
 }
 
-.third-project-container {
+.mini-project-container {
   display: flex;
   flex-wrap: wrap; 
-  align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 10px;
+  width: 100%;
 }
 
 .thumbnail-image {
@@ -252,15 +271,9 @@ li {
   align-items: flex-start;
 }
 
-.white-button {
-  background: white;
-  color: #ff4942;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-.white-button:hover {
-  background:#E3D8CC;
+.white-link {
+  color: white;
+  margin: 80px 0px;
 }
 
 /* Background */
@@ -269,39 +282,14 @@ li {
   display: flex;
 }
 
-.accordion-container {
+.faq-block {
   background:#E3D8CC;
   width: 50%;
   padding: 60px 0px;
 }
 
-.accordion-heading, .answer {
+.faq-heading, .answer {
   padding-left: 60px;
-}
-
-.question {
-  cursor: pointer;
-}
-
-.active + .answer-container {
-  display: block;
-  width: 80%;
-}
-
-.answer-container {
-  display: none;
-}
-
-.answer {
-  font-size: 16px;
-  width: 100%;
-}
-
-.clients-container {
-  background: white;
-  color: #ff4942; 
-  width: 50%;
-  padding: 60px;
 }
 
 .clients-small-heading {
@@ -325,13 +313,16 @@ footer {
   background: #ff4942;
   display: flex;
   flex-direction: column;
-  padding: 150px;
+  text-align: center;
+  align-items: center;
+  padding: 100px 0px;
 }
 
-.contact-details, .footer-email {
+.contact-details {
   color: white;
-  font-size: 16px;
-  padding-left: 40px;
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 180%;
 }
 
 /* Ipad/Mobil */
@@ -359,10 +350,10 @@ footer {
   
 /* Intro */
   .intro {
-  flex-direction: column;
+    flex-direction: column;
   }
 
-  .color {
+  .color-block {
     width: 100%;
     padding: 20px 0px;
   }
@@ -375,10 +366,10 @@ footer {
     margin-top: 0px;
   }
 
-  .about-me {
-    width: 100%;
+  .text-block {
+    width: 95%;
     margin: 0px;
-    padding: 40px 0px 60px 60px;
+    padding: 60px 0px 60px 60px;
   }
 
   .intro-text {
@@ -394,10 +385,6 @@ footer {
     margin: 10px 0px;
     font-size: 18px;
   }
-
-  .red-button {
-    padding: 20px;
-  } 
 
   /* Skills */
 
@@ -422,6 +409,7 @@ footer {
     font-size: 28px;
     padding: 0px 40px;
   }
+
   .project {
     width: 100%;
     margin: 20px;
@@ -442,7 +430,7 @@ footer {
     padding-bottom: 20px;
   }
 
-  .third-project-container {
+  .mini-container {
     justify-content: space-evenly;
     padding: 0px;
   }
@@ -459,22 +447,16 @@ footer {
     flex-direction: column;
   }
 
-  .accordion-container {
+  .faq-block {
     width: 100%;
   }
 
-  .accordion-heading, .answer {
-    padding: 0px 40px;
-  }
-
-  .active + .answer-container {
-    width: 100%;
+  .faq-heading, .answer {
+    padding: 0px 60px;
   }
 
   .answer {
-    font-size: 18px;
-    padding: 0px 40px;
-    width: 100%;
+    width: 90%;
   }
 
   .clients-container {
@@ -484,7 +466,7 @@ footer {
 
   .clients-text {
     margin: 0px;
-    width: 100%;
+    width: 90%;
   }
 
   .lecturing {
@@ -494,18 +476,10 @@ footer {
 
   /* Footer */
 
-   footer {
-     padding: 100px 20px;
-
+  footer {
+    padding: 100px 0px;
     }
-  .contact-details, .footer-email {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-  }
-
 }
-
 
   /* Mobil */
 
@@ -533,9 +507,13 @@ footer {
     h1 {
       margin-bottom: 20px;
     }
+
+    .list-heading {
+      margin-top: 40px;
+    }
   
-    .about-me {
-      padding: 20px 20px 40px 40px;
+    .text-block {
+      padding: 20px 0px 40px 40px;
     }
   
     .skill-section {
@@ -549,7 +527,7 @@ footer {
     }
   
     .skill-list {
-      padding: 20px 40px;
+      padding: 20px;
       margin: 0px;
     }
   
@@ -567,21 +545,34 @@ footer {
     }
   
     .tech {
-      padding-left: 10px;
-      padding-right: 10px; 
-      margin: 0px;
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
     }
   
-    .third-project-container {
+    .mini-project-container {
       width: 100%;
     }
   
     .thumbnail-image {
       display: none;
     }
+
+    .faq-block {
+      padding: 60px 40px;
+    }
+
+    .faq-heading, .answer {
+      width: 100%;
+      padding: 0px;
+    }
+
+    .clients-heading {
+      padding-top: 20px;
+    }
   
     .clients-small-heading {
-      margin-top: 15px; 
+      margin-top: 5px; 
     }
 
     .clients-text {
