@@ -90,6 +90,7 @@ header {
 }
 
 .heading-small {
+  color: black;
   padding-left: 50px;
   font-size: 24px;
   margin: 0px;
@@ -255,14 +256,13 @@ span {
 .mini-project-container {
   display: flex;
   flex-wrap: wrap; 
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px;
-  width: 100%;
+  width: 9%;
 }
 
 .thumbnail-image {
   width: 20%;
-  align-items: flex-start;
 }
 
 .white-link {
@@ -310,6 +310,11 @@ footer {
   text-align: center;
   align-items: center;
   padding: 100px 0px;
+}
+
+.contact-list-container {
+  padding-bottom: 0px;
+  margin: 0px;
 }
 
 .contact-details {
@@ -497,6 +502,7 @@ footer {
     .heading-small {
       display: flex;
       justify-content: center;
+      color: #ff4942;
       font-size: 72px;
       margin: 0px;
       padding: 0px;
@@ -575,6 +581,14 @@ footer {
 
     .clients-text {
       padding-bottom: 0px;
+    }
+
+    footer {
+      padding: 40px 0px;
+    }
+
+    .contact-details {
+      font-size: 18px;
     }
 
   }
