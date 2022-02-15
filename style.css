@@ -3,8 +3,8 @@
 }
 
 html {
-  background: white;
-  color: black;
+  background: #FFFFFC;
+  color: #000000;
 }
   
 body {
@@ -34,7 +34,7 @@ h4 {
 }
 
 p {
-  color: black;
+  color: #000000;
   line-height: 180%;
   font-size: 18px;
   width: 85%;
@@ -50,7 +50,7 @@ ul {
 
 li {
   list-style-type: circle;
-  color: black;
+  color: #000000;
   width: fit-content;
   margin: 10px;
 }
@@ -60,7 +60,7 @@ li {
 a {
   text-decoration: none;
   font-weight: bold;
-  color:white;
+  color:#FFFFFC;
   font-size: 20px;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 .heading-small {
-  color: black;
+  color: #000000;
   padding-left: 50px;
   font-size: 24px;
   margin: 0px;
@@ -141,20 +141,20 @@ header {
 }
 
 .text-block {
-  background: white;
-  color: black; 
+  background: #FFFFFC;
+  color: #000000; 
   width: 50%;
   margin: 0px;
   padding: 60px 0px 60px 60px;
 }
 
 .intro-text {
-  color: black;
+  color: #000000;
   padding: 0px;
 }
 
 .list-heading {
-  color: black;
+  color: #000000;
   font-size: 24px;
   margin-top: 60px;
 }
@@ -199,13 +199,12 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background:#ff4942;
+  background:#FFFFFC;
   width: 100%;
   margin: 0px;
 }
 
 .section-heading {
-  color: white;
   padding: 40px 0px;
 }
 
@@ -218,7 +217,7 @@ span {
 .project {
   width: 45%;
   margin: 20px;
-  background: white;
+  background: #FFFFFC;
 }
 
 .project-screenshot {
@@ -228,12 +227,12 @@ span {
 
 .project-heading {
   padding: 0px 60px;
-  color: black;
+  color: #000000;
   margin: 0px;
 }
 
 .project-text {
-  color:black; 
+  color:#000000; 
   padding: 20px 60px;
   width: 100%;
 }
@@ -245,8 +244,8 @@ span {
 
 .tech {
   list-style-type: none;
-  color: black;
-  background:  #E3D8CC;;
+  color: #000000;
+  background:  #E3D8CC;
   border-radius: 5px;
   font-weight: 900;
   padding: 10px 30px;
@@ -266,7 +265,7 @@ span {
 }
 
 .white-link {
-  color: white;
+  color: #FFFFFC;
   margin: 80px 0px;
 }
 
@@ -292,7 +291,7 @@ span {
 }
 
 .clients-text {
-  color: black;
+  color: #000000;
   padding: 0px;
 }
 
@@ -317,7 +316,7 @@ footer {
 }
 
 .contact-details {
-  color: white;
+  color: #FFFFFC;
   list-style-type: none;
   font-size: 24px;
   line-height: 180%;
@@ -432,10 +431,10 @@ footer {
     padding-bottom: 20px;
   }
 
-  .mini-container {
+  /* .mini-project-container {
     justify-content: space-evenly;
     padding: 0px;
-  }
+  } */
 
   .thumbnail-image {
     width: 45%;
@@ -553,9 +552,9 @@ footer {
       font-size: 16px;
     }
   
-    .mini-project-container {
+    /* .mini-project-container {
       width: 100%;
-    }
+    } */
   
     .thumbnail-image {
       display: none;
